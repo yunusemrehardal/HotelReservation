@@ -26,6 +26,8 @@ builder.Services.AddScoped<ISubscribeService, SubscribeManager>();
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("OtelApiCors", builder =>
@@ -49,8 +51,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-	app.UseSwagger();
-	app.UseSwaggerUI();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseCors("OtelApiCors");

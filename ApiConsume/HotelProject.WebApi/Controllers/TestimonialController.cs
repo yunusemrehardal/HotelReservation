@@ -28,8 +28,8 @@ namespace HotelProject.WebApi.Controllers
 			_testimonialService.TInsert(testimonial);
 			return Ok();
 		}
-		[HttpDelete]
-		public IActionResult DeleteTestimonial(int id)
+		[HttpDelete("{id}")]
+        public IActionResult DeleteTestimonial(int id)
 		{
 			var values = _testimonialService.TGetByID(id);
 			_testimonialService.TDelete(values);
