@@ -1,4 +1,4 @@
-﻿namespace HotelProject.WebUI.Dtos.Contact
+﻿namespace HotelProject.WebUI.Dtos.ContactDto
 {
     public class InboxContactDto
     {

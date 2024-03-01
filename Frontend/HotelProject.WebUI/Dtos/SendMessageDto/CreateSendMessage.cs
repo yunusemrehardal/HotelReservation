@@ -1,8 +1,7 @@
-﻿namespace HotelProject.WebUI.Dtos.ContactDto
+﻿namespace HotelProject.WebUI.Dtos.SendMessageDto
 {
-    public class GetMessageByIDDto
+    public class CreateSendMessage
     {
-        public int SendMessageID { get; set; }
         public string ReceiverName { get; set; }
         public string ReceiverMail { get; set; }
         public string SenderName { get; set; }

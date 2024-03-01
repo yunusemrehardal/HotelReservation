@@ -1,6 +1,12 @@
-﻿namespace HotelProject.WebUI.Dtos.ContactDto
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HotelProject.EntityLayer.Concrete
 {
-    public class GetMessageByIDDto
+    public class SendMessage
     {
         public int SendMessageID { get; set; }
         public string ReceiverName { get; set; }
